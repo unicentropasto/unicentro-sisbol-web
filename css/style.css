@@ -1,0 +1,259 @@
+* {margin:0; padding:0;}
+
+body {
+	background: #fff;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+
+#header {
+	margin: 30px auto 0 auto;
+	width: 650px;
+	padding: 0;
+	/*border: 5px solid #fff;*/
+	height: 650px;
+	background: #1D669E url(img/Encabezado.png) no-repeat center 10px;
+}
+
+#header1 {
+	margin: 30px auto 0 auto;
+	width: 650px;
+	padding: 0;
+	/*border: 5px solid #fff;*/
+	height: 650px;
+	background: #1D669E url(img/Encabezado.png) no-repeat center 10px;
+}
+
+#header2 {
+	margin: 30px auto 0 auto;
+	width: 650px;
+	padding: 0;
+	/*border: 5px solid #fff;*/
+	height: 650px;
+	background: #1D669E url(img/maternas.png) no-repeat center 10px;
+}
+
+#header3 {
+	margin: 30px auto 0 auto;
+	width: 650px;
+	padding: 0;
+	/*border: 5px solid #fff;*/
+	height: 650px;
+	background: #1D669E url(img/por_enfermera.png) no-repeat center 10px;
+}
+
+#header4 {
+	margin: 30px auto 0 auto;
+	width: 650px;
+	padding: 0;
+	/*border: 5px solid #fff;*/
+	height: 650px;
+	background: #1D669E url(img/por_medico.png) no-repeat center 10px;
+}
+
+#header5 {
+	margin: 30px auto 0 auto;
+	width: 650px;
+	padding: 0;
+	/*border: 5px solid #fff;*/
+	height: 650px;
+	background: #1D669E url(img/controles.png) no-repeat center 10px;
+}
+
+#nav1{
+	position:relative;
+	top:102px;
+	left:7px;
+	padding:0 2px 0 5px;
+	width: 630px;
+	height: 538px;
+	background: #fff;
+	color: #181FA5;
+	text-align:left;
+}
+
+#nav2{
+	position:relative;
+	top:83px;
+	left:8px;
+	padding:0 0 0 5px;
+	width: 630px;
+	height: 529px;
+	background: #fff;
+	color: #1D669E;
+	text-align:left;
+}
+
+
+
+/*desde aqui*/
+
+.sm {
+	list-style:none;
+	width:620px;
+	height:230px;
+	display:block;
+	overflow:hidden
+}
+
+.sm li {
+	float:left;
+	display:inline;
+	overflow:hidden
+}
+
+a img { border: none; }
+
+a:link{
+	color: #1D669E;
+}
+
+a:visited{
+	color: #1D669E;
+}
+
+a:active{
+	color: #FFB756;
+}
+
+a:hover{
+	text-decoration: Underline;
+	color: #FFB756;
+} 
+
+a{
+	text-decoration: None;
+} 
+
+/* relative font-size version */
+
+#miniflex {
+	position:relative;
+	top:83px;
+	width: 97%;
+	float: left;
+	font-family:arial;
+	font-size: small; /* could be specified at a higher level */
+	margin: 0  0 0 4px;
+	padding: 0;
+}
+
+#miniflex li {
+	float: left;
+	margin: 0; 
+	padding: 0;
+	display: inline;
+	list-style: none;
+}
+	
+#miniflex a:link, #miniflex a:visited {
+	float: left;
+	font-size: 85%;
+	line-height: 20px;
+	font-weight: bold;
+	margin: 0 10px 0 0;
+	text-decoration: none;
+	color: #FFB756;
+}
+
+#miniflex a.active:link, #miniflex a.active:visited, #miniflex a:hover {
+	border-bottom: 8px solid #FFF;
+	padding-bottom: 2px;
+	color: #FFF;
+}
+
+td, th, input, select, textarea {
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#2175C9;
+}
+
+
+
+.Tbl0{
+width:96%;
+height:20px;
+margin:10px 10px 0px 10px;
+border-width:0;
+text-align:left;
+vertical-align:center;
+}
+
+.Tbl1{
+width:96%;
+height:20px;
+margin:1px 10px 10px 10px;
+border-width:0;
+text-align:left;
+vertical-align:center;
+}
+
+.Tbl2{
+width:96%;
+height:20px;
+margin:1px 10px 10px 10px;
+border-width:0;
+text-align:left;
+vertical-align:center;
+background-color:#BED1DB;
+}
+
+/*COLOR AZUL DE FONDO PARA TD ENCABEZADOS #BED1DB*/
+
+.Td0{
+background-color:#2B4E6C;
+padding-left:10px;
+color:#F0E156;
+font-weight:bold;
+}
+
+.Td1{
+text-align:center;
+background-color:#57A5FE;
+color:#FDFA9D;
+font-weight:bold;
+vertical-align:middle;
+}
+
+.Td2{
+padding-left:10px;
+}
+
+.Td3{
+padding-left:1px;
+}
+
+.Td4{
+text-align:center;
+}
+
+.Td5{
+text-align:right;
+padding-right:10px;
+}
+
+.Th0{
+text-align:center;
+background-color:#A3D6F3;
+color:#2B4E6C;
+}
+
+.Msg { /*Informe de operación ejecutada en el sistema*/
+	width: 50%;
+	margin-top: 5%;
+	background: #BED1DB Url(/Server/Hcmp_Desarrollo/img/feed_error.png) No-Repeat Center;
+	background-position: 15px 50%; /* x-pos y-pos */
+	text-align: Justify;
+	color: #FFF;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	padding: 10px 10px 10px 45px;
+	border-top: 2px Solid #1D669E;
+	border-bottom: 2px Solid #1D669E;
+}
+
+.color{
+	color:#1D669E;
+}

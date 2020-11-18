@@ -1,0 +1,167 @@
+* {margin:0; padding:0;}
+
+body {
+	background: #fff;
+}
+
+.color{
+	color:#1D669E;
+}
+
+#header {
+	margin: 30px auto 0 auto;
+	width: 650px;
+	padding: 0;
+	/*border: 5px solid #fff;*/
+	height: 650px;
+	background: #1D669E url(img/Encabezado.png) no-repeat center 10px;
+}
+
+#header1 {
+	margin: 30px auto 0 auto;
+	width: 650px;
+	padding: 0;
+	/*border: 5px solid #fff;*/
+	height: 650px;
+	background: #1D669E url(img/Encabezado.png) no-repeat center 10px;
+}
+
+#header2 {
+	margin: 30px auto 0 auto;
+	width: 650px;
+	padding: 0;
+	/*border: 5px solid #fff;*/
+	height: 650px;
+	background: #1D669E url(img/maternas.png) no-repeat center 10px;
+}
+
+#header3 {
+	margin: 30px auto 0 auto;
+	width: 650px;
+	padding: 0;
+	/*border: 5px solid #fff;*/
+	height: 650px;
+	background: #1D669E url(img/por_enfermera.png) no-repeat center 10px;
+}
+
+#header4 {
+	margin: 30px auto 0 auto;
+	width: 650px;
+	padding: 0;
+	/*border: 5px solid #fff;*/
+	height: 650px;
+	background: #1D669E url(img/por_medico.png) no-repeat center 10px;
+}
+
+#header5 {
+	margin: 30px auto 0 auto;
+	width: 650px;
+	padding: 0;
+	/*border: 5px solid #fff;*/
+	height: 650px;
+	background: #1D669E url(img/controles.png) no-repeat center 10px;
+}
+
+#nav1{
+	position:relative;
+	top:102px;
+	left:7px;
+	padding:0 2px 0 5px;
+	width: 630px;
+	height: 538px;
+	background: #fff;
+	font-weight: Bold;
+	color: #181FA5;
+	text-align:left;
+}
+
+#nav2{
+	position:relative;
+	top:83px;
+	left:8px;
+	padding:0 0 0 5px;
+	width: 630px;
+	height: 529px;
+	background: #fff;
+	font-weight: Bold;
+	color: #181FA5;
+	text-align:left;
+}
+
+
+
+/*desde aqui*/
+
+.sm {
+	list-style:none;
+	width:620px;
+	height:230px;
+	display:block;
+	overflow:hidden
+}
+
+.sm li {
+	float:left;
+	display:inline;
+	overflow:hidden
+}
+
+a img { border: none; }
+
+a:link{
+	color: #1D669E;
+}
+
+a:visited{
+	color: #1D669E;
+}
+
+a:active{
+	color: #FFB756;
+}
+
+a:hover{
+	text-decoration: Underline;
+	color: #FFB756;
+} 
+
+a{
+	text-decoration: None;
+} 
+
+/* relative font-size version */
+
+#miniflex {
+	position:relative;
+	top:83px;
+	width: 97%;
+	float: left;
+	font-family:arial;
+	font-size: small; /* could be specified at a higher level */
+	margin: 0  0 0 4px;
+	padding: 0;
+}
+
+#miniflex li {
+	float: left;
+	margin: 0; 
+	padding: 0;
+	display: inline;
+	list-style: none;
+}
+	
+#miniflex a:link, #miniflex a:visited {
+	float: left;
+	font-size: 85%;
+	line-height: 20px;
+	font-weight: bold;
+	margin: 0 10px 0 0;
+	text-decoration: none;
+	color: #FFB756;
+}
+
+#miniflex a.active:link, #miniflex a.active:visited, #miniflex a:hover {
+	border-bottom: 8px solid #FFF;
+	padding-bottom: 2px;
+	color: #FFF;
+}

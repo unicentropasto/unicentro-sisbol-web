@@ -1,2 +1,2 @@
-# unicentro-sisbol-web-
-Sistema de rifas web
+# unicentro-sisbol-web
+Proyecto sisbol web

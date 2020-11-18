@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>SisBol</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+<?
+include("funciones.php");
+conectarbd();
+$consultatp="SELECT nomb_ent,nit_ent FROM sisbol.entidad";
+echo $consultatp;
+$consultatp=msyql_query($consultatp);
+$rowtp=mysql_fetch_array($consultatp);
+?>
+<table class='Tbl0' width='100%'>
+  <tr>
+    <td align="left"><img src='img/logo23.png' width='150' height='50'></td>
+    <td align="center"><?echo $rowtp[nomb_ent]?></td>
+    <td class='Td2' align='right'><img src='img/logosisbol.PNG' width='40' height='20'></td>
+  </tr>
+</table>
+<!--<table class='Tbl0' width='100%'>
+  <tr>
+    <td width='80%' class='Td2' align='left'><b><h1>BOLETAS</td>
+  </tr>
+</table>-->
+</body>
+</html>
