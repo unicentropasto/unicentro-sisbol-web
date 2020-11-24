@@ -58,7 +58,7 @@ $link=conectarbd();
     </td>
   </tr>
   <tr>
-    <td class='Td2' width='40%' align='right'>Fecha Final de la Campaña: dd/mm/aaaa</td>
+    <td class='Td2' width='40%' align='right'>Fecha Final de la Campaña: aaaa/mm/dd</td>
     <td class='Td2' width='60%' align='left'><input type='date' name='fechafin_camp'></td>
   </tr>
   <tr>
