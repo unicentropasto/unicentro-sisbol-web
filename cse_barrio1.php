@@ -31,7 +31,7 @@ $link=conectarbd();
 <body>
 <form name='form1' method='post' action='cse_barrio1.php'>
 <table class='Tbl0'>
-  <tr><td class='Td0' align='center'>Barrios</td></tr>
+  <tr><td class='Td0' align='center'>Barriosssss</td></tr>
 </table>
 <br>
 <table class='Tbl0' width='100%' border='0'>
