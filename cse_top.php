@@ -15,7 +15,7 @@ $rowtp=pg_fetch_array($consultatp);
 ?>
 <table class='Tbl0' width='100%'>
   <tr>
-    <td align="left" width="30%"><img src='img/logo23.png' width='150' height='50'></td>
+    <td align="left" width="30%"><img src='img/logo23.PNG' width='150' height='50'></td>
     <td align="center" style="font-size:14px" width="40%">
         <?php
         echo "<b>".$rowtp['nomb_ent']."<br>NIT:".$rowtp['nit_ent'];
