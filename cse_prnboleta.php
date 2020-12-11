@@ -33,9 +33,9 @@ $pdf=new FPDF('P','mm','p1');
 while($row=pg_fetch_array($consulta)){
     $pdf->AddPage();
     $pdf->SetFont('Arial','',8);
-    $f=3;
-    //$pdf->Image('img\logo23.png',2,2,50,40,'','');
+    $pdf->Image('img\logo23.png',25,2,25,10,'','');
 
+    $f=15;
     $pdf->SetXY(2,$f);
     $pdf->Cell(68,4,$rowent['nomb_ent'],0,0,'C');
 
