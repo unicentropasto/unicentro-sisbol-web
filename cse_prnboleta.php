@@ -33,7 +33,7 @@ $pdf=new FPDF('P','mm','p1');
 while($row=pg_fetch_array($consulta)){
     $pdf->AddPage();
     $pdf->SetFont('Arial','',8);
-    //$pdf->Image('img\logo23.png',25,2,25,10,'','');
+    $pdf->Image('img\logo23.PNG',25,2,25,10,'','');
 
     $f=15;
     $pdf->SetXY(2,$f);
