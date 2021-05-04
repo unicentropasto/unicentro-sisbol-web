@@ -72,7 +72,7 @@ $barrio=$rowcli['descripcion'];
 <body>
 <form name='form1' method='post' action='cse_ecliente111.php'>
 <table class='Tbl0' w=$rowcli[apel_cli];;dth='100%'>
-  <tr><td class='Td0' align='center'>Editar Clienteeee</td></tr>
+  <tr><td class='Td0' align='center'>Editar Clientes</td></tr>
 </table>
 <br>
 <table class='Tbl0' width='100%'>
@@ -144,7 +144,7 @@ $barrio=$rowcli['descripcion'];
 	<td></td>
 	<td></td>
 	<td class='Td2' align='right'>Puntos Acumulados:</td>
-	<td class='Td2' align='left'><font color='#ff0000'><b><?echo $rowcli[punt_cli];?></font></td>
+	<td class='Td2' align='left'><font color='#ff0000'><b><?php echo $rowcli[punt_cli];?></font></td>
   </tr>
 </table>
 
