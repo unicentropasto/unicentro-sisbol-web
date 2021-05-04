@@ -144,7 +144,7 @@ $barrio=$rowcli['descripcion'];
 	<td></td>
 	<td></td>
 	<td class='Td2' align='right'>Puntos Acumulados:</td>
-	<td class='Td2' align='left'><font color='#ff0000'><b><?php echo $rowcli[punt_cli];?></font></td>
+	
   </tr>
 </table>
 
