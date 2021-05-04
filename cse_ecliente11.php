@@ -72,7 +72,7 @@ $barrio=$rowcli['descripcion'];
 <body>
 <form name='form1' method='post' action='cse_ecliente111.php'>
 <table class='Tbl0' w=$rowcli[apel_cli];;dth='100%'>
-  <tr><td class='Td0' align='center'>Editar Cliente</td></tr>
+  <tr><td class='Td0' align='center'>Editar Clienteeee</td></tr>
 </table>
 <br>
 <table class='Tbl0' width='100%'>
