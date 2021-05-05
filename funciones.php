@@ -48,9 +48,12 @@ function cambiafechadmy($xfecha_)
 //Conexion con la base
 function conectarbd()
 {
+  //conexion local
+  //$conexion = pg_connect("host='127.0.0.1' port='5432' dbname='sisbolbd_uc' user='postgres' password='12996873'") or die('No se ha podido conectar: ' . pg_last_error());
+  //conexion cloud
   $conexion=pg_connect("host='ec2-54-146-142-58.compute-1.amazonaws.com' port='5432' dbname='detpukejscm3jg' user='qxadshebebcnfq' password='da5c6dd95c571921b7e074cb38a6a9616888f86bf490c16e48dfa46492145c20'") or die('No se ha podido conectar: ' . pg_last_error());
   if(!$conexion){
-    echo "No hay conexi�n con la BD";
+    echo "No hay conexión con la BD";
   }
   //pg_set_charset($conexion,"utf8");
   return $conexion;

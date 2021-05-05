@@ -53,6 +53,7 @@ $consulta=pg_query($link,$consulta);
 	echo "<td class='Td2'>$estado</td>";
 	echo "</tr>";
   }
+  ECHO "aQUI";
   ?>  
 </table>
 <!--<input type='text' name='codi_cli' value="<?php echo $_GET[codi_cli];?>">-->
