@@ -22,7 +22,7 @@ $consulta="SELECT codi_ucs,iden_ucs,nomb_ucs,logi_ucs,esta_ucs FROM sisbol.u_cli
 $consulta=pg_query($link,$consulta);
 ?>
 <table class='Tbl0'>
-  <tr><td class='Td1' align='center'>Listado de Usuarios del Sistema</td></tr>
+  <tr><td class='Td1' align='center'>Listado de Usuarios del Sistema__</td></tr>
 </table>
 <table class='Tbl0' width='70%' border='0'>
   <th class='Th0' width='10%' colspan='2'>Opciones</th>
@@ -53,7 +53,6 @@ $consulta=pg_query($link,$consulta);
 	echo "<td class='Td2'>$estado</td>";
 	echo "</tr>";
   }
-  ECHO "aQUI";
   ?>  
 </table>
 <!--<input type='text' name='codi_cli' value="<?php echo $_GET[codi_cli];?>">-->
