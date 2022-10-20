@@ -49,13 +49,13 @@ while($row=pg_fetch_array($consulta)){
 
     $f=$f+4;
     $pdf->SetXY(2,$f);
-    $pdf->Cell(68,4,"CAMPAÑA PUBLICITARIA",0,0,'C');
+    $pdf->Cell(68,4,"CAMPAÃ‘A PUBLICITARIA",0,0,'C');
 
     $pdf->SetFont('Arial','',6);
 
     $f=$f+4;
     $pdf->SetXY(2,$f);
-    $pdf->MultiCell(68,3,$row['nombre_camp'],0,'C');
+    $pdf->MultiCell(68,3,utf8_decode($row['nombre_camp']),0,'C');
     $f=$pdf->GetY();
 
     //$f=$f+3;
@@ -72,7 +72,7 @@ while($row=pg_fetch_array($consulta)){
 	$f=$pdf->GetY();
     $f=$f+6;
     $pdf->SetXY(2,$f);
-    $pdf->Cell(68,4,$row['nombre'],0,0,'C');
+    $pdf->Cell(68,4,utf8_decode($row['nombre']),0,0,'C');
 
     $f=$f+4;
     $pdf->SetXY(2,$f);
@@ -134,10 +134,10 @@ while($row=pg_fetch_array($consulta)){
 
     $f=$f+7;
     $pdf->SetXY(0,$f);
-    $pdf->Cell(68,2,"°<",0,0,'L');
+    $pdf->Cell(68,2,"Â°<",0,0,'L');
     $f=$f+1;
     $pdf->SetXY(0,$f);
-    $pdf->Cell(68,2,"°",0,0,'L');
+    $pdf->Cell(68,2,"Â°",0,0,'L');
 }
 $sql="UPDATE sisbol.boleta SET impr_bol='S' WHERE codi_bol='".$_GET['codi_bol']."'";
 //echo $sql;
