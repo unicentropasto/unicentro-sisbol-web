@@ -37,7 +37,7 @@ $row=pg_fetch_array($consulta);
 	<td class='Td2' width='15%' align='right'>Nombre:</td>
         <td class='Td2' width='25%' align='left'><input type='text' name='nomb_ent' size='50' maxlength='50' value='<?php echo $row['nomb_ent'];?>'></td>
 	<td class='Td2' width='20%' align='right'>Valor para cada boleta:</td>
-	<td class='Td2' width='10%' align='left'><input type='text' name='valxb_ent' size='5' maxlength='5' value='<?php echo $row['valxb_ent'];?>'></td>
+	<td class='Td2' width='10%' align='left'><input type='text' name='valxb_ent' size='6' maxlength='6' value='<?php echo $row['valxb_ent'];?>'></td>
   </tr>
   <tr>
       	<td class='Td2' width='15%' align='right'>Fecha inicial para sorteo (dd/mm/yyyy):</td>

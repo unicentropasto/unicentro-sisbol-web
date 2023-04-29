@@ -29,7 +29,7 @@ function atras()
 //Aqui cargo las funciones 
 include("funciones.php");
 $link=conectarbd();
-$consulta="select iden_ucs,nomb_ucs,logi_ucs,clav_ucs,tipo_ucs from sisbol.u_cliseb where codi_ucs='$_GET[codi_ucs]'";
+$consulta="select iden_ucs,nomb_ucs,logi_ucs,clav_ucs,tipo_ucs from sisbol.u_cliseb where codi_ucs='".$_GET['codi_ucs']."'";
 $consulta=pg_query($link,$consulta);
 $row=pg_fetch_array($consulta);
 ?>
@@ -63,8 +63,8 @@ $row=pg_fetch_array($consulta);
   <tr>
     <td class='Td2' align='right'>Tipo de Usuario:</td>
 	<td class='Td2' align='left'><select name='tipo_ucs'>
-	  <option value='2'>Usuario
-	  <option value='1'>Superusuario
+	  <option value='2'>Usuario</option>
+	  <option value='1'>Superusuario</option>
 	  </select>
 	</td>
   </tr>

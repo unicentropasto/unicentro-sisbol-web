@@ -21,7 +21,7 @@ numpersonas_camp ='$_POST[numpersonas_camp]',
 valor_camp ='$_POST[valor_camp]',
 estado_camp='$_POST[estado_camp]'
 WHERE id_camp='$_POST[id_camp]'";
-echo $sql;
+//echo $sql;
 pg_query($link,$sql);
 pg_close($link);
 

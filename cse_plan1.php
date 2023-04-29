@@ -62,16 +62,19 @@ $rowppm=pg_fetch_array($consultappm);
   <th class='Th0' width='10%' colspan='3'>Opciones</th>
   <th class='Th0' width='90%'>Descripción</th>
   <?php
-  $consultapre="SELECT codi_pre,desc_pre FROM sisbol.premio WHERE codi_ppm='$rowppm[codi_ppm]'";
-  ECHO $consultapre;
-  $consultapre=pg_query($link,$consultapre);
-  while($rowpre=pg_fetch_array($consultapre)){
-	echo "<tr>";
-	echo "<td class='Td2'><a href='cse_plan12.php?codi_pre=$rowpre[codi_pre]'><img src='img/32px-Crystal_Clear_device_tablet.png' border=0 height='20' width='20' title='Editar'></a></td>";
-	echo "<td class='Td2'></td>";
-	echo "<td class='Td2'><a href='#' onclick='borrar(\"$rowpre[codi_pre]\",\"$rowpre[desc_pre]\")'><img src='img/32px-Crystal_Clear_action_tab_remove.png' border=0 height='20' width='20' title='Borrar'></a></td>";
-	echo "<td class='Td2'>$rowpre[desc_pre]</td>";
-	echo "</tr>";
+  if(!empty($rowppm['codi_ppm'])){
+    $consultapre="SELECT codi_pre,desc_pre FROM sisbol.premio WHERE codi_ppm='$rowppm[codi_ppm]'";
+    //ECHO $consultapre;
+
+    $consultapre=pg_query($link,$consultapre);
+    while($rowpre=pg_fetch_array($consultapre)){
+      echo "<tr>";
+      echo "<td class='Td2'><a href='cse_plan12.php?codi_pre=$rowpre[codi_pre]'><img src='img/32px-Crystal_Clear_device_tablet.png' border=0 height='20' width='20' title='Editar'></a></td>";
+      echo "<td class='Td2'></td>";
+      echo "<td class='Td2'><a href='#' onclick='borrar(\"$rowpre[codi_pre]\",\"$rowpre[desc_pre]\")'><img src='img/32px-Crystal_Clear_action_tab_remove.png' border=0 height='20' width='20' title='Borrar'></a></td>";
+      echo "<td class='Td2'>$rowpre[desc_pre]</td>";
+      echo "</tr>";
+    }  
   }
   ?>  
 </table>
